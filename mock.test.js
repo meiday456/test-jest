@@ -83,11 +83,11 @@ test("findOne fetches data from the API endpoint and returns what axios get retu
     expect(user).toHaveProperty("id", 1);
     expect(user).toHaveProperty("name", "Dale Seo");
     expect(axios.get).toBeCalledTimes(1);
-
-
     expect(axios.get).toBeCalledWith(
         `https://jsonplaceholder.typicode.com/users/1`
     );
+
+
 });
 
 
